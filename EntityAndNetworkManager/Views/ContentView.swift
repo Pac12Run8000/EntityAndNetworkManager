@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+    
+    @ObservedObject var viewModel = ViewModel()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,6 +20,13 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear {
+            self.viewModel.translate(sentence: "You are what you eat")
+            print("Test:\(self.viewModel.translation)")
+            print("self.viewModel.$ent:\(self.viewModel.ent)")
+            
+            
+        }
     }
 }
 
