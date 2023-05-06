@@ -14,7 +14,7 @@
 		090FA2AF2A06005000A238DC /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FA2AE2A06005000A238DC /* Translation.swift */; };
 		090FA2B32A0602FE00A238DC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FA2B22A0602FE00A238DC /* NetworkManager.swift */; };
 		090FA2B62A06093200A238DC /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FA2B52A06093200A238DC /* NetworkingError.swift */; };
-		090FA2B82A0635AB00A238DC /* ContentView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FA2B72A0635AB00A238DC /* ContentView+ViewModel.swift */; };
+		090FA2B82A0635AB00A238DC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FA2B72A0635AB00A238DC /* ViewModel.swift */; };
 		090FA2BA2A063B5600A238DC /* URLUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FA2B92A063B5600A238DC /* URLUtility.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,7 @@
 		090FA2AE2A06005000A238DC /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		090FA2B22A0602FE00A238DC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		090FA2B52A06093200A238DC /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
-		090FA2B72A0635AB00A238DC /* ContentView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+ViewModel.swift"; sourceTree = "<group>"; };
+		090FA2B72A0635AB00A238DC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		090FA2B92A063B5600A238DC /* URLUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				090FA2A12A05F04200A238DC /* ContentView.swift */,
-				090FA2B72A0635AB00A238DC /* ContentView+ViewModel.swift */,
+				090FA2B72A0635AB00A238DC /* ViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 				090FA2A02A05F04200A238DC /* EntityAndNetworkManagerApp.swift in Sources */,
 				090FA2AF2A06005000A238DC /* Translation.swift in Sources */,
 				090FA2B62A06093200A238DC /* NetworkingError.swift in Sources */,
-				090FA2B82A0635AB00A238DC /* ContentView+ViewModel.swift in Sources */,
+				090FA2B82A0635AB00A238DC /* ViewModel.swift in Sources */,
 				090FA2BA2A063B5600A238DC /* URLUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
