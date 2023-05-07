@@ -16,8 +16,7 @@ class ViewModel:ObservableObject {
         @Published var data:Data?
         @Published var translation:TranslationResponse?
         @Published var sentence:String = ""
-        @Published var ent:String = "Norbert"
-        
+    
         var cancellables:Set<AnyCancellable> = []
         
         
