@@ -12,20 +12,29 @@ struct ContentView: View {
     
     @ObservedObject var viewModel = ViewModel()
     
+    @State var sentence:String = "Hello, World"
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            TextField("Enter Sentence", text: Binding(
+                get: {
+                    viewModel.sentence
+                },
+                set: {
+                    viewModel.sentence = $0
+                }
+            ))
+                            
         }
         .padding()
         .onAppear {
-            self.viewModel.translate(sentence: "You are what you eat")
-            print("Test:\(self.viewModel.translation)")
-            print("self.viewModel.$ent:\(self.viewModel.ent)")
+            viewModel.fetchTranslationText(sentence: "You are what you eat.")
             
-            
+            print("viewModel.sentence:[\(viewModel.sentence)]")
         }
     }
 }
