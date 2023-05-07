@@ -23,8 +23,8 @@ class ViewModel:ObservableObject {
         public func fetchTranslationText(sentence:String) {
             guard let url = URLUtility.buildURL(with: sentence) else {return}
             let promise = NetworkManager.shared.fetchAPIResponse(url: url)
-            let acronym = promise.decode(type: TranslationResponse.self, decoder: JSONDecoder())
-            acronym.sink { (completion) in
+            let translatedContent = promise.decode(type: TranslationResponse.self, decoder: JSONDecoder())
+            translatedContent.sink { (completion) in
                 
                 if case let .failure(error) = completion {
                     print("ViewModelCompletion: \(error.localizedDescription)")
